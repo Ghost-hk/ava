@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f1ead2;
+}
+
+button {
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.light-btn {
+  background-color: #f1ead2;
+  color: #322f30;
+  border: #322f30 1px solid;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #322f30;
+    color: #f1ead2;
+  }
+}
+
+.dark-btn {
+  background-color: #322f30;
+  color: #f1ead2;
+  border: #322f30 1px solid;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #f1ead2;
+    color: #322f30;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #322f30;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #322f30;
+}
+
+.page-title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #322f30;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@import "nav";
+@import "homePage-intro";
+@import "intro";
+@import "imageWithText";
+@import "imageCard-with-text";
+@import "last";
+@import "footer";

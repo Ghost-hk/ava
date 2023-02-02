@@ -1,0 +1,44 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-color: #f1ead2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+
+  h1,
+  p,
+  div {
+    z-index: 10;
+    color: #f1ead2;
+  }
+
+  p {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  img {
+    object-position: center;
+  }
+
+  .btns {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .homePage-intro {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+}

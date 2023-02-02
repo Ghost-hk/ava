@@ -1,0 +1,61 @@
+.image-links {
+  display: flex;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+  div {
+    position: relative;
+    width: 100%;
+    height: 37.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.875rem;
+    overflow: hidden;
+
+    &:hover {
+      cursor: pointer;
+
+      img {
+        scale: 1.1;
+      }
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #322f30;
+      opacity: 0.5;
+      z-index: 1;
+    }
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s ease-in-out;
+    }
+
+    h3 {
+      position: relative;
+      z-index: 10;
+      font-size: 4rem;
+      font-weight: 700;
+      color: #f1ead2;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .image-links {
+    flex-direction: column;
+
+    div {
+      height: 18.75rem;
+    }
+  }
+}

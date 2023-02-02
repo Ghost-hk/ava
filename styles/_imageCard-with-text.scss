@@ -1,0 +1,60 @@
+.imageCard-with-text {
+  display: flex;
+
+  .image {
+    width: 50%;
+    height: 31.25rem;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .txt {
+    width: 50%;
+    padding: 2rem 2rem 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #322f30;
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #f1ead2;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      //   font-weight: 400;
+      color: #f1ead2;
+      letter-spacing: 1px;
+      line-break: 1px;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .imageCard-with-text {
+    flex-direction: column;
+    margin-top: 3rem !important;
+
+    .image {
+      width: 100%;
+      height: 20rem;
+    }
+
+    .txt {
+      width: 100%;
+      padding: 1rem 1rem 1rem 2rem;
+    }
+  }
+}
